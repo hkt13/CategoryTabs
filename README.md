@@ -1,0 +1,1 @@
+A project based on Category based products for men, woman and kids. By default, it is showing the men's clothing, with changing on tabs it will show accordingly. I have built it with pure Html css and javascript like asked. Also it is responsivenss or all screens. I ahve also deployed it on vercel. you just need to run it on ypour local server
