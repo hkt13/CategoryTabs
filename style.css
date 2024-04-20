@@ -17,7 +17,6 @@
 }
 
 #main{
-  border: 2px solid black;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
@@ -62,9 +61,9 @@
 }
 
 .tab-container .tab button img {
-  width: 12px;
-  height: 30px;
-  margin-right: 2px;
+  width: 12px; 
+  height: 30px; 
+  margin-right: 2px; 
   display: none;
 }
 
@@ -151,6 +150,7 @@ section{
   font-weight: 600;
 }
 
+
 .discount{
     color: red;
 }
@@ -172,10 +172,20 @@ section{
 
 
 /* Media queries for responsiveness */
+
 @media screen and (min-width:465px) {
+  
   .tab-container{
     padding: 0 3rem;
   }
+
+  #heading{
+    font-size: 17px;
+  }
+
+}
+
+@media screen and (min-width:550px) {
   section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,15 +194,23 @@ section{
     height: 280px;
   }
   #heading{
-    font-size: 17px;
+    font-size: 25px;
   }
+
+  .tab-container .tab button{
+    padding: 5px;
+  }
+
+  .tab-container .tab button img{
+    margin-right: 5px;
+  }
+
+  .tab-container .tab button span{
+    font-size: 14px;
+  }
+
 }
 
-@media screen and (min-width:550px) {
-  .img-block span{
-    font-size: 11px;
-  }
-}
 
 @media screen and (min-width:730px) {
   section{
@@ -209,28 +227,18 @@ section{
   #heading{
     font-size: 30px;
   }
+ 
   .tab-container .tab button{
     padding: 6px;
   }
   .tab-container .tab button img{
-    width: 15px;
+   width: 15px;
   }
   .tab-container .tab button span{
-    font-size: 16px;
-  }
-  .price-offer{
-    font-size: 12.5px;
-  }
-  .title .titleInfo span{
-    font-size: 17.5px;
-  }
-  .title > span{
-    font-size: 13px;
-  }
-  .addToCart button{
-    font-size: 14px;
+   font-size: 16px;
   }
 }
+
 
 @media screen and (min-width:980px) {
   .price-offer{
@@ -245,6 +253,7 @@ section{
   .addToCart button{
     font-size: 14px;
   }
+
   .img-block span{
     font-size: 11px;
   }
