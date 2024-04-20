@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container{
+  padding: 4rem;
+}
+
+.wrapper{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#main{
+  border: 2px solid black;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#heading{
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.tab-container{
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-container .tab button{
+  width: 100%;
+  height: 100%;
+    background:#F2F2F2;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-container .tab:first-child button{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.tab-container .tab:last-child button{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.tab-container .tab button img {
+  width: 12px;
+  height: 30px;
+  margin-right: 2px;
+  display: none;
+}
+
+.tab-container .tab button .show {
+display: block;
+}
+
+.tab-container .tab button span {
+  font-size: 11px; 
+}
+
+
+.tab-container .tab .active{
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+}
+
+.img-block{
+  position: relative;
+  height: 400px;
+}
+
+.img-block img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-block span{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: white;
+  padding: 8px 12px;
+  font-size: 9px;
+  font-weight: 600;
+  padding-top: 5px;
+  border-radius: 3px;
+}
+
+.title{
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title .titleInfo{
+  display: flex;
+  gap: 2px;
+}
+
+.title .titleInfo img{
+  width: 4px;
+}
+
+.title .titleInfo span {
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 116px;
+}
+
+.title > span {
+  margin-left: 8px;
+  font-size: 11px;
+    font-weight: 500;
+}
+
+.price-offer{
+  margin: 8px 0;
+  display: flex;
+  gap: 9px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.discount{
+    color: red;
+}
+
+.mrp{
+    text-decoration: line-through;
+    color: darkgray;
+}
+
+.addToCart button{
+  width: 100%;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 7px 0;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (min-width:465px) {
+  .tab-container{
+    padding: 0 3rem;
+  }
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-block{
+    height: 280px;
+  }
+  #heading{
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width:550px) {
+  .img-block span{
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width:730px) {
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:895px) {
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #heading{
+    font-size: 30px;
+  }
+  .tab-container .tab button{
+    padding: 6px;
+  }
+  .tab-container .tab button img{
+    width: 15px;
+  }
+  .tab-container .tab button span{
+    font-size: 16px;
+  }
+  .price-offer{
+    font-size: 12.5px;
+  }
+  .title .titleInfo span{
+    font-size: 17.5px;
+  }
+  .title > span{
+    font-size: 13px;
+  }
+  .addToCart button{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:980px) {
+  .price-offer{
+    font-size: 12.5px;
+  }
+  .title .titleInfo span{
+    font-size: 17.5px;
+  }
+  .title > span{
+    font-size: 13px;
+  }
+  .addToCart button{
+    font-size: 14px;
+  }
+  .img-block span{
+    font-size: 11px;
+  }
+}
